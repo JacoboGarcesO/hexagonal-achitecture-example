@@ -17,9 +17,9 @@ spring:
     password: ${RABBITMQ_PASSWORD}
 
 rabbit:
-  queue-name: transactions
-  exchange-name: transactions
-  routing-key: transactions
+  queue-name: users.queue
+  exchange-name: users.exchange
+  routing-key: users.routing-key
 
 logging:
   level:

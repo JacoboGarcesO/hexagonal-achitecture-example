@@ -5,9 +5,14 @@ include ':app'
 include ':model'
 include ':usecases'
 include ':reactive-web'
+include ':rabbit'
+include ':rabbit-consumer'
 
 findProject(':app')?.projectDir = file('./src/application/app')
 findProject(':postgres')?.projectDir = file('./src/infrastructure/driven-adapters/postgres')
 findProject(':model')?.projectDir = file('./src/domain/model')
 findProject(':usecases')?.projectDir = file('./src/domain/usecases')
 findProject(':reactive-web')?.projectDir = file('./src/infrastructure/entry-points/reactive-web')
+findProject(':rabbit')?.projectDir = file('./src/infrastructure/driven-adapters/rabbit')
+findProject(':rabbit-consumer')?.projectDir = file('./src/infrastructure/entry-points/rabbit-consumer')
+

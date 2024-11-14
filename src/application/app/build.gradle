@@ -2,6 +2,9 @@ dependencies {
     implementation project(':postgres')
     implementation project(':usecases')
     implementation project(':reactive-web')
+    implementation project(':rabbit')
+    implementation project(':rabbit-consumer')
     implementation('org.springframework.boot:spring-boot-starter-webflux')
     implementation('org.springframework.boot:spring-boot-starter-data-r2dbc')
+    implementation('org.springframework.boot:spring-boot-starter-amqp')
 }
