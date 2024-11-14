@@ -1,4 +1,4 @@
-package com.example;
+package com.example.controllers;
 
 import com.example.dtos.users.UserDTO;
 import com.example.handlers.CreateUserHandler;

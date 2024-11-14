@@ -1,12 +1,14 @@
-package co.example;
+package co.example.adapters;
 
 import co.example.entities.UserEntity;
 import co.example.repositories.IUserRepository;
 import com.example.dtos.users.CreateUserDTO;
 import com.example.entities.User;
 import com.example.ports.IUserRepositoryPort;
+import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Mono;
 
+@Repository
 public class UserRepositoryAdapter implements IUserRepositoryPort {
   private final IUserRepository userRepository;
 

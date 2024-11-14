@@ -4,10 +4,12 @@ import com.example.dtos.users.CreateUserDTO;
 import com.example.dtos.users.UserDTO;
 import com.example.entities.User;
 import com.example.ports.IUserRepositoryPort;
+import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
 import java.util.function.Function;
 
+@Component
 public class CreateUserUseCase implements Function<UserDTO, Mono<UserDTO>> {
   private final IUserRepositoryPort userRepository;
 
